@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Project)(type Legacy)(uri ${KIPRJMOD}/symbol.lib)(options "")(descr "All symbols contained in this project"))
+  (lib (name pwm_charger_20a-rescue)(type Legacy)(uri ${KIPRJMOD}/pwm_charger_20a-rescue.lib)(options "")(descr ""))
+)
