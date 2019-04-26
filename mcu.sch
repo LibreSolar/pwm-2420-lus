@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:pwm_charger_20a-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "PWM Solar Charge Controller"
-Date "2019-03-05"
-Rev "0.2"
+Date "2019-04-25"
+Rev "0.2.1"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: https://libre.solar"
@@ -186,7 +186,7 @@ AR Path="/5B07ACDD" Ref="LED2"  Part="1"
 AR Path="/58A68DCB/5B07ACDD" Ref="LED4"  Part="1" 
 F 0 "LED4" H 5225 6550 50  0000 L CNN
 F 1 "green" H 5225 6450 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" V 5100 6500 50  0001 C CNN
+F 2 "LibreSolar:LED_0603_D3.0mm" V 5100 6500 50  0001 C CNN
 F 3 "" V 5100 6500 50  0000 C CNN
 F 4 "Lite-On" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "LTL-4231" H 0   0   50  0001 C CNN "PartNumber"
@@ -341,8 +341,9 @@ F 0 "J4" H 7550 2150 50  0000 L CNN
 F 1 "UEXT" H 8050 2150 50  0000 R CNN
 F 2 "LibreSolar:Box_Header_2x05x2.54mm_Straight" H 7800 1200 50  0001 C CIN
 F 3 "" H 7800 1800 60  0000 C CNN
-F 4 "any" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "2x5 pin box header, pitch 2.54 mm" H 0   0   50  0001 C CNN "Remarks"
+F 4 "On Shore Technology Inc." H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "302-S101" H 7800 1800 50  0001 C CNN "PartNumber"
+F 6 "2x5 pin box header, pitch 2.54 mm" H 0   0   50  0001 C CNN "Remarks"
 	1    7800 1800
 	1    0    0    -1  
 $EndComp
@@ -408,7 +409,7 @@ U 1 1 5B184898
 P 5600 6500
 F 0 "LED5" H 5725 6550 50  0000 L CNN
 F 1 "green" H 5725 6450 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" V 5600 6500 50  0001 C CNN
+F 2 "LibreSolar:LED_0603_D3.0mm" V 5600 6500 50  0001 C CNN
 F 3 "" V 5600 6500 50  0000 C CNN
 F 4 "Lite-On" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "LTL-4231" H 0   0   50  0001 C CNN "PartNumber"
@@ -452,7 +453,7 @@ U 1 1 5B6AEAEC
 P 5100 5900
 F 0 "LED1" H 5225 5950 50  0000 L CNN
 F 1 "yellow" H 5225 5850 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" V 5100 5900 50  0001 C CNN
+F 2 "LibreSolar:LED_0603_D3.0mm" V 5100 5900 50  0001 C CNN
 F 3 "" V 5100 5900 50  0000 C CNN
 F 4 "Lite-On" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "LTL-1CHY" H 0   0   50  0001 C CNN "PartNumber"
@@ -466,7 +467,7 @@ U 1 1 5B6AEB66
 P 6100 5900
 F 0 "LED3" H 6225 5950 50  0000 L CNN
 F 1 "yellow" H 6225 5850 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" V 6100 5900 50  0001 C CNN
+F 2 "LibreSolar:LED_0603_D3.0mm" V 6100 5900 50  0001 C CNN
 F 3 "" V 6100 5900 50  0000 C CNN
 F 4 "Lite-On" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "LTL-1CHY" H 0   0   50  0001 C CNN "PartNumber"
@@ -480,7 +481,7 @@ U 1 1 5B6B9B63
 P 5600 5900
 F 0 "LED2" H 5725 5950 50  0000 L CNN
 F 1 "yellow" H 5725 5850 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" V 5600 5900 50  0001 C CNN
+F 2 "LibreSolar:LED_0603_D3.0mm" V 5600 5900 50  0001 C CNN
 F 3 "" V 5600 5900 50  0000 C CNN
 F 4 "Lite-On" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "LTL-1CHY" H 0   0   50  0001 C CNN "PartNumber"
@@ -1346,4 +1347,8 @@ Wire Wire Line
 	8600 3300 9300 3300
 Wire Wire Line
 	8600 2900 8600 3000
+Text Label 7000 3700 0    50   ~ 0
+RX
+Text Label 7000 3800 0    50   ~ 0
+TX
 $EndSCHEMATC

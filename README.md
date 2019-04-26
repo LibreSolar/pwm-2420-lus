@@ -14,7 +14,7 @@ Gerber files: [PCB ordering](http://libre.solar/docs/pcb_ordering)  documentatio
 
 Bill of Materials: [BOM export](http://libre.solar/docs/bom) from KiCAD
 
-Firmware: [Charge Controller Software](https://github.com/LibreSolar/ChargeController_Software) repository (Remark: PWM charge controller support not yet fully implemented)
+Firmware: [ChargeController Firmware](https://github.com/LibreSolar/ChargeController_Firmware) repository (Remark: PWM charge controller support not yet fully implemented)
 
 ## Features:
 - 12V/24V battery voltage

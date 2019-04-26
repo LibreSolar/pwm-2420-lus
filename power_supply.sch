@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:pwm_charger_20a-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "PWM Solar Charge Controller"
-Date "2019-03-05"
-Rev "0.2"
+Date "2019-04-25"
+Rev "0.2.1"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: https://libre.solar"
@@ -187,7 +187,7 @@ U 1 1 5C40477C
 P 6800 2800
 F 0 "D9" V 6754 2879 50  0000 L CNN
 F 1 "SS14FL" V 6845 2879 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" V 6800 2800 50  0001 C CNN
+F 2 "LibreSolar:D_SOD-123F" V 6800 2800 50  0001 C CNN
 F 3 "" V 6800 2800 50  0000 C CNN
 F 4 "On Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "SS14FL" H 0   0   50  0001 C CNN "PartNumber"
@@ -692,7 +692,7 @@ U 1 1 5C8ADB84
 P 1700 2000
 F 0 "D2" V 1654 2079 50  0000 L CNN
 F 1 "SS14FL" V 1745 2079 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" V 1700 2000 50  0001 C CNN
+F 2 "LibreSolar:D_SOD-123F" V 1700 2000 50  0001 C CNN
 F 3 "" V 1700 2000 50  0000 C CNN
 F 4 "On Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "SS14FL" H 0   0   50  0001 C CNN "PartNumber"
