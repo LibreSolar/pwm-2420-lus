@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:pwm_charger_20a-cache
+LIBS:pwm-2420-lus-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 3 4
 Title "PWM Solar Charge Controller"
 Date "2019-04-25"
-Rev "0.2.1"
+Rev "0.2.2"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: https://libre.solar"

@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:pwm_charger_20a-cache
+LIBS:pwm-2420-lus-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "PWM Solar Charge Controller"
-Date "2019-04-25"
-Rev "0.2.1"
+Date "2019-08-16"
+Rev "0.2.2"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: https://libre.solar"
@@ -727,30 +727,30 @@ $EndComp
 $Comp
 L Project:C C?
 U 1 1 5C600D3E
-P 4700 6900
+P 4000 7000
 AR Path="/5C5FE364/5C600D3E" Ref="C?"  Part="1" 
 AR Path="/58A68DC9/5C600D3E" Ref="C4"  Part="1" 
-F 0 "C4" H 4720 6970 50  0000 L CNN
-F 1 "10n" H 4720 6830 50  0000 L CNN
-F 2 "LibreSolar:C_0805_2012" H 4700 6900 50  0001 C CNN
-F 3 "" H 4700 6900 50  0000 C CNN
-F 4 "Yageo" H 950 -200 50  0001 C CNN "Manufacturer"
-F 5 "CC0805KRX7R0BB103" H 950 -200 50  0001 C CNN "PartNumber"
-F 6 "100V, X7R" H -1000 4300 50  0001 C CNN "Remarks"
-	1    4700 6900
+F 0 "C4" H 4020 7070 50  0000 L CNN
+F 1 "10n" H 4020 6930 50  0000 L CNN
+F 2 "LibreSolar:C_0805_2012" H 4000 7000 50  0001 C CNN
+F 3 "" H 4000 7000 50  0000 C CNN
+F 4 "Yageo" H 250 -100 50  0001 C CNN "Manufacturer"
+F 5 "CC0805KRX7R0BB103" H 250 -100 50  0001 C CNN "PartNumber"
+F 6 "100V, X7R" H -1700 4400 50  0001 C CNN "Remarks"
+	1    4000 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C600D45
-P 4700 7100
+P 4000 7400
 AR Path="/5C5FE364/5C600D45" Ref="#PWR?"  Part="1" 
 AR Path="/58A68DC9/5C600D45" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 4700 6850 50  0001 C CNN
-F 1 "GND" H 4700 6950 50  0000 C CNN
-F 2 "" H 4700 7100 50  0000 C CNN
-F 3 "" H 4700 7100 50  0000 C CNN
-	1    4700 7100
+F 0 "#PWR019" H 4000 7150 50  0001 C CNN
+F 1 "GND" H 4000 7250 50  0000 C CNN
+F 2 "" H 4000 7400 50  0000 C CNN
+F 3 "" H 4000 7400 50  0000 C CNN
+	1    4000 7400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -786,16 +786,16 @@ $EndComp
 $Comp
 L Project:R R?
 U 1 1 5C600D5F
-P 4500 6600
+P 3800 6600
 AR Path="/5C5FE364/5C600D5F" Ref="R?"  Part="1" 
 AR Path="/58A68DC9/5C600D5F" Ref="R22"  Part="1" 
-F 0 "R22" V 4430 6600 50  0000 C CNN
-F 1 "2.2k" V 4570 6600 50  0000 C CNN
-F 2 "LibreSolar:R_0805_2012" H 4500 6600 50  0001 C CNN
-F 3 "" H 4500 6600 50  0000 C CNN
-F 4 "Yageo" H 1050 -150 50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-072K2L" H 1050 -150 50  0001 C CNN "PartNumber"
-	1    4500 6600
+F 0 "R22" V 3730 6600 50  0000 C CNN
+F 1 "39k" V 3870 6600 50  0000 C CNN
+F 2 "LibreSolar:R_0805_2012" H 3800 6600 50  0001 C CNN
+F 3 "" H 3800 6600 50  0000 C CNN
+F 4 "Yageo" H 350 -150 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0739K0L" H 350 -150 50  0001 C CNN "PartNumber"
+	1    3800 6600
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -903,7 +903,7 @@ F 5 "RC0805FR-072K2L" H -5300 1250 50  0001 C CNN "PartNumber"
 	1    4800 5100
 	0    -1   1    0   
 $EndComp
-Text Notes 3500 6100 0    100  ~ 0
+Text Notes 3500 6200 0    100  ~ 0
 Load current
 Text Notes 4700 4600 0    100  ~ 0
 Solar current
@@ -912,7 +912,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 6500 1600 6500
 Wire Wire Line
-	4700 7000 4700 7100
+	4000 7100 4000 7400
 Wire Wire Line
 	5000 5500 5000 5600
 Wire Wire Line
@@ -920,9 +920,9 @@ Wire Wire Line
 Wire Wire Line
 	5000 5100 5000 5300
 Wire Wire Line
-	4600 6600 4700 6600
+	3900 6600 4000 6600
 Wire Wire Line
-	4700 6600 4700 6800
+	4000 6600 4000 6900
 Wire Wire Line
 	4300 5600 4600 5600
 Wire Wire Line
@@ -956,7 +956,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 7200 2700 6700
 Connection ~ 5000 5100
-Connection ~ 4700 6600
+Connection ~ 4000 6600
 Connection ~ 4600 5100
 Connection ~ 3800 5000
 Connection ~ 2700 6500
@@ -1051,7 +1051,7 @@ $EndComp
 Wire Wire Line
 	5000 5100 5200 5100
 Wire Wire Line
-	4700 6600 4900 6600
+	4000 6600 4400 6600
 Wire Wire Line
 	4600 5100 4700 5100
 Wire Wire Line
@@ -1278,8 +1278,8 @@ F 5 "RC0805FR-0712KL" H -1700 -4900 50  0001 C CNN "PartNumber"
 	1    2300 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 800  7500 0    50   ~ 0
-Load overcurrent protection:\n- Short-circuit: >400% of rated current\n  Immediate cut-off using comparator\n- Overcurrent: >120% of rated current \n  Delayed cut-off (3s)
+Text Notes 1000 7500 0    50   ~ 0
+Comparator for short circuit protection\ntriggers if measured current >200%.\nOutput filter tuned to allow inrush current\nof 1000 uF capacitor connected to load.
 $Comp
 L power:VDDA #PWR0107
 U 1 1 5C535DFD
@@ -1294,64 +1294,57 @@ $EndComp
 $Comp
 L Project:R R?
 U 1 1 5C5630CF
-P 3800 6800
+P 4400 6800
 AR Path="/5C5FE364/5C5630CF" Ref="R?"  Part="1" 
 AR Path="/58A68DC9/5C5630CF" Ref="R40"  Part="1" 
-F 0 "R40" V 3730 6800 50  0000 C CNN
-F 1 "12k" V 3870 6800 50  0000 C CNN
-F 2 "LibreSolar:R_0805_2012" H 3800 6800 50  0001 C CNN
-F 3 "" H 3800 6800 50  0000 C CNN
-F 4 "Yageo" H 350 50  50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-0712KL" H 350 50  50  0001 C CNN "PartNumber"
-	1    3800 6800
+F 0 "R40" V 4330 6800 50  0000 C CNN
+F 1 "12k" V 4470 6800 50  0000 C CNN
+F 2 "LibreSolar:R_0805_2012" H 4400 6800 50  0001 C CNN
+F 3 "" H 4400 6800 50  0000 C CNN
+F 4 "Yageo" H 950 50  50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0712KL" H 950 50  50  0001 C CNN "PartNumber"
+	1    4400 6800
 	1    0    0    1   
 $EndComp
 $Comp
 L Project:R R?
 U 1 1 5C563204
-P 3800 7200
+P 4400 7200
 AR Path="/5C5FE364/5C563204" Ref="R?"  Part="1" 
 AR Path="/58A68DC9/5C563204" Ref="R41"  Part="1" 
-F 0 "R41" V 3730 7200 50  0000 C CNN
-F 1 "8.2k" V 3870 7200 50  0000 C CNN
-F 2 "LibreSolar:R_0805_2012" H 3800 7200 50  0001 C CNN
-F 3 "" H 3800 7200 50  0000 C CNN
-F 4 "Yageo" H 350 450 50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-078K2L" H 350 450 50  0001 C CNN "PartNumber"
-	1    3800 7200
+F 0 "R41" V 4330 7200 50  0000 C CNN
+F 1 "8.2k" V 4470 7200 50  0000 C CNN
+F 2 "LibreSolar:R_0805_2012" H 4400 7200 50  0001 C CNN
+F 3 "" H 4400 7200 50  0000 C CNN
+F 4 "Yageo" H 950 450 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-078K2L" H 950 450 50  0001 C CNN "PartNumber"
+	1    4400 7200
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C563286
-P 3800 7400
+P 4400 7400
 AR Path="/5C5FE364/5C563286" Ref="#PWR?"  Part="1" 
 AR Path="/58A68DC9/5C563286" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 3800 7150 50  0001 C CNN
-F 1 "GND" H 3800 7250 50  0000 C CNN
-F 2 "" H 3800 7400 50  0000 C CNN
-F 3 "" H 3800 7400 50  0000 C CNN
-	1    3800 7400
+F 0 "#PWR0109" H 4400 7150 50  0001 C CNN
+F 1 "GND" H 4400 7250 50  0000 C CNN
+F 2 "" H 4400 7400 50  0000 C CNN
+F 3 "" H 4400 7400 50  0000 C CNN
+	1    4400 7400
 	1    0    0    -1  
 $EndComp
-Text GLabel 3900 7000 2    50   Output ~ 0
+Text GLabel 4500 7000 2    50   Output ~ 0
 I_LOAD_COMP
 Wire Wire Line
-	3800 6900 3800 7000
+	4400 6900 4400 7000
 Wire Wire Line
-	3800 7000 3900 7000
-Connection ~ 3800 7000
+	4400 7000 4500 7000
+Connection ~ 4400 7000
 Wire Wire Line
-	3800 7000 3800 7100
+	4400 7000 4400 7100
 Wire Wire Line
-	3800 7300 3800 7400
-Wire Wire Line
-	3800 6600 3800 6700
-Connection ~ 3800 6600
-Wire Wire Line
-	3800 6600 4400 6600
-Wire Wire Line
-	3600 6600 3800 6600
+	4400 7300 4400 7400
 $Comp
 L Transistor_BJT:BC817 T4
 U 1 1 5C87E60E
@@ -1592,7 +1585,7 @@ F 3 "" H 1800 4600 50  0001 C CNN
 	1    1800 4600
 	1    0    0    -1  
 $EndComp
-Text Notes 4100 7600 0    50   ~ 0
+Text Notes 4800 7500 0    50   ~ 0
 COMP2 using Vref_int = 1.202 ... 1.242 V\nas reference triggered latest at\nVout = 1.242V * (12+8.2)/8.2 = 3.06V
 $Comp
 L power:+12V #PWR?
@@ -1633,4 +1626,11 @@ Text Notes 10250 1750 0    50   ~ 0
 Load
 Text Notes 1500 3600 0    50   ~ 0
 T4 should provide\nsolar panel short\ncircuit protection\nduring operation\n(yet to be tested)
+Wire Wire Line
+	3600 6600 3700 6600
+Wire Wire Line
+	4400 6600 4400 6700
+Connection ~ 4400 6600
+Wire Wire Line
+	4400 6600 4900 6600
 $EndSCHEMATC
