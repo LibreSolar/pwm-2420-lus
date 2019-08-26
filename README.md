@@ -18,7 +18,7 @@ Firmware: [Charge Controller Firmware](https://github.com/LibreSolar/charge-cont
 
 ## Features:
 - 12V/24V battery voltage
-- 20A max. charge current (10A with cheaper MOSFETs)
+- Up to 20A max. charge current (depending on selected MOSFETs)
 - 55V max. solar input
 - 32bit ARM MCU (STM32L072)
 - Expandable via Olimex Universal Extension Connector (UEXT) featuring

@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title "PWM Solar Charge Controller"
-Date "2019-08-16"
-Rev "0.2.2"
+Title "PWM 2420 LUS"
+Date "2019-08-26"
+Rev "0.3"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: https://libre.solar"
@@ -388,7 +388,7 @@ F 4 "+info" H -2900 -2000 50  0001 C CNN "Config"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC817 T1
+L Transistor_BJT:MMBT3904 T1
 U 1 1 58ACF046
 P 7900 2600
 F 0 "T1" H 8100 2675 50  0000 L CNN
@@ -1150,12 +1150,12 @@ L Device:Q_NMOS_GDS Q7
 U 1 1 5C3F0DB8
 P 4500 3600
 F 0 "Q7" V 4750 3600 50  0000 C CNN
-F 1 "IRFB7787" V 4841 3600 50  0000 C CNN
+F 1 "AOT266L" V 4841 3600 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 4700 3700 50  0001 C CNN
 F 3 "~" H 4500 3600 50  0001 C CNN
 F 4 "+tht_fets" H 200 0   50  0001 C CNN "Config"
-F 5 "Infineon" H 200 0   50  0001 C CNN "Manufacturer"
-F 6 "IRFB7787PbF" H 200 0   50  0001 C CNN "PartNumber"
+F 5 "Alpha&Omega Semiconductor" H 200 0   50  0001 C CNN "Manufacturer"
+F 6 "AOT266L" H 200 0   50  0001 C CNN "PartNumber"
 	1    4500 3600
 	0    1    1    0   
 $EndComp
@@ -1164,12 +1164,12 @@ L Device:Q_NMOS_GDS Q6
 U 1 1 5C3F0F29
 P 2900 3600
 F 0 "Q6" V 3150 3600 50  0000 C CNN
-F 1 "IRFB7787" V 3241 3600 50  0000 C CNN
+F 1 "AOT266L" V 3241 3600 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 3100 3700 50  0001 C CNN
 F 3 "~" H 2900 3600 50  0001 C CNN
 F 4 "+tht_fets" H 200 0   50  0001 C CNN "Config"
-F 5 "Infineon" H 200 0   50  0001 C CNN "Manufacturer"
-F 6 "IRFB7787PbF" H 200 0   50  0001 C CNN "PartNumber"
+F 5 "Alpha&Omega Semiconductor" H 200 0   50  0001 C CNN "Manufacturer"
+F 6 "AOT266L" H 200 0   50  0001 C CNN "PartNumber"
 	1    2900 3600
 	0    -1   1    0   
 $EndComp
@@ -1178,12 +1178,12 @@ L Device:Q_NMOS_GDS Q8
 U 1 1 5C3F0FFC
 P 8600 3600
 F 0 "Q8" V 8850 3600 50  0000 C CNN
-F 1 "IRFB7787" V 8941 3600 50  0000 C CNN
+F 1 "AOT266L" V 8941 3600 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 8800 3700 50  0001 C CNN
 F 3 "~" H 8600 3600 50  0001 C CNN
 F 4 "+tht_fets" H 200 0   50  0001 C CNN "Config"
-F 5 "Infineon" H 200 0   50  0001 C CNN "Manufacturer"
-F 6 "IRFB7787PbF" H 200 0   50  0001 C CNN "PartNumber"
+F 5 "Alpha&Omega Semiconductor" H 200 0   50  0001 C CNN "Manufacturer"
+F 6 "AOT266L" H 200 0   50  0001 C CNN "PartNumber"
 	1    8600 3600
 	0    1    1    0   
 $EndComp
@@ -1346,7 +1346,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 7300 4400 7400
 $Comp
-L Transistor_BJT:BC817 T4
+L Transistor_BJT:MMBT3904 T4
 U 1 1 5C87E60E
 P 3200 2700
 F 0 "T4" H 3400 2775 50  0000 L CNN

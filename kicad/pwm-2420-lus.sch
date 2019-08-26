@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title "PWM Solar Charge Controller"
-Date "2019-04-25"
-Rev "0.2.2"
+Title "PWM 2420 LUS"
+Date "2019-08-26"
+Rev "0.3"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: https://libre.solar"
@@ -15,29 +15,29 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 5100 2500 1400 1000
+S 5000 3000 1400 1000
 U 58A68DC9
 F0 "PWM power stage" 50
 F1 "pwm.sch" 50
 $EndSheet
 $Sheet
-S 2600 2500 1400 1000
+S 2500 3000 1400 1000
 U 58A68DCB
 F0 "MCU" 50
 F1 "mcu.sch" 50
 $EndSheet
 $Sheet
-S 7600 2500 1400 1000
+S 7500 3000 1400 1000
 U 58C18D5C
 F0 "Power Supply" 50
 F1 "power_supply.sch" 50
 $EndSheet
-Text Notes 3500 1500 0    200  ~ 0
-PWM Solar Charge Controller 20A
-Text Notes 2600 4700 0    100  ~ 0
+Text Notes 3000 1700 0    200  ~ 0
+24V / 20A PWM Solar Charge Controller
+Text Notes 1600 6100 0    100  ~ 0
 Main Specifications
-Text Notes 2600 5500 0    50   ~ 0
-- 12V/24V battery voltage\n- 20A max. charge current (10A with cheaper MOSFETs possible)\n- 55V max. solar input\n- 32bit ARM MCU (STM32L072)\n- Expandable via Olimex Universal Extension Connector (UEXT) featuring\n   I2C, Serial and SPI interface (e.g. used for display, WIFI communication, etc.)\n- USB charging (single port)\n- Low-side load switching\n
+Text Notes 1600 6900 0    50   ~ 0
+- 12V/24V battery voltage\n- up to 20A max. charge current (depending on MOSFET selection)\n- 55V max. solar input\n- 32bit ARM MCU (STM32L072)\n- Expandable via Olimex Universal Extension Connector (UEXT) featuring\n   I2C, Serial and SPI interface (e.g. used for display, WIFI communication, etc.)\n- USB charging (single port)\n- Low-side load switching\n
 $Comp
 L Project:Logo_Open_Hardware_Small LOGO2
 U 1 1 58C36283
@@ -62,11 +62,11 @@ F 4 "+info" H 9650 6100 50  0001 C CNN "Config"
 	1    9650 6100
 	1    0    0    -1  
 $EndComp
-Text Notes 5500 3000 0    100  ~ 0
+Text Notes 5400 3500 0    100  ~ 0
 PWM
-Text Notes 3100 3000 0    100  ~ 0
+Text Notes 3000 3500 0    100  ~ 0
 MCU
-Text Notes 8000 3200 0    100  ~ 0
+Text Notes 7900 3700 0    100  ~ 0
 Power\n\nUSB
 $Comp
 L Mechanical:MountingHole_Pad MK1
@@ -104,19 +104,6 @@ F 4 "+info" H 0   0   50  0001 C CNN "Config"
 	1    6000 6800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 6600 6000 6600
-$Comp
-L power:GND #PWR0106
-U 1 1 5AF1E99A
-P 5800 7300
-F 0 "#PWR0106" H 5800 7050 50  0001 C CNN
-F 1 "GND" H 5805 7127 50  0000 C CNN
-F 2 "" H 5800 7300 50  0001 C CNN
-F 3 "" H 5800 7300 50  0001 C CNN
-	1    5800 7300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole_Pad MK4
 U 1 1 5B038156
@@ -129,17 +116,8 @@ F 4 "+info" H 0   0   50  0001 C CNN "Config"
 	1    6000 7100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 7200 5800 7200
-Connection ~ 5800 7200
-Wire Wire Line
-	5800 7200 5800 7300
-Wire Wire Line
-	5800 6600 5800 6900
-Wire Wire Line
-	6000 6900 5800 6900
-Connection ~ 5800 6900
-Wire Wire Line
-	5800 6900 5800 7200
 NoConn ~ 6000 6300
+NoConn ~ 6000 6600
+NoConn ~ 6000 6900
+NoConn ~ 6000 7200
 $EndSCHEMATC
